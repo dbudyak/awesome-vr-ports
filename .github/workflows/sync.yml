@@ -1,0 +1,35 @@
+name: Sync star list
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update README from star list
+        env:
+          # STARS_TOKEN (a personal token) is needed only if the list is private.
+          GITHUB_TOKEN: ${{ secrets.STARS_TOKEN || secrets.GITHUB_TOKEN }}
+          LIST_OWNER: ${{ vars.LIST_OWNER || github.repository_owner }}
+          LIST_NAME: ${{ vars.LIST_NAME }}
+        run: python scripts/sync_list.py
+
+      - name: Commit changes
+        run: |
+          git diff --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Sync README with star list"
+          git push
