@@ -20,7 +20,6 @@ import os
 import re
 import sys
 import urllib.request
-from collections import defaultdict
 
 API = "https://api.github.com/graphql"
 START, END = "<!-- LIST:START -->", "<!-- LIST:END -->"
@@ -50,7 +49,6 @@ query($id: ID!, $after: String) {
             stargazerCount
             isArchived
             pushedAt
-            primaryLanguage { name }
           }
         }
       }
@@ -111,24 +109,16 @@ def fmt_stars(n):
 
 
 def render(lst, repos):
-    by_lang = defaultdict(list)
-    for r in repos:
-        by_lang[(r["primaryLanguage"] or {}).get("name", "Other")].append(r)
-
     lines = [f"_{len(repos)} projects, mirrored from the "
              f"[{lst['name']}](https://github.com/stars/{os.environ['LIST_OWNER']}/lists/{lst['slug']}) star list._", ""]
-    # Biggest groups first, "Other" last.
-    for lang in sorted(by_lang, key=lambda l: (l == "Other", -len(by_lang[l]), l)):
-        lines += [f"### {lang}", ""]
-        for r in sorted(by_lang[lang], key=lambda r: -r["stargazerCount"]):
-            desc = (r["description"] or "").strip().replace("\n", " ")
-            badges = f" ⭐ {fmt_stars(r['stargazerCount'])}"
-            if r["isArchived"]:
-                badges += " · 🗄️ archived"
-            entry = f"- [{r['nameWithOwner']}]({r['url']})"
-            lines.append(f"{entry} — {desc}{badges}" if desc else f"{entry}{badges}")
-        lines.append("")
-    return "\n".join(lines).rstrip() + "\n"
+    for r in sorted(repos, key=lambda r: -r["stargazerCount"]):
+        desc = (r["description"] or "").strip().replace("\n", " ")
+        badges = f" ⭐ {fmt_stars(r['stargazerCount'])}"
+        if r["isArchived"]:
+            badges += " · 🗄️ archived"
+        entry = f"- [{r['nameWithOwner']}]({r['url']})"
+        lines.append(f"{entry} — {desc}{badges}" if desc else f"{entry}{badges}")
+    return "\n".join(lines) + "\n"
 
 
 def main():
