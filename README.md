@@ -8,22 +8,23 @@ The list below is kept in sync with a GitHub star list by a
 ## Ports
 
 <!-- LIST:START -->
-_16 projects, mirrored from the [VR-mods](https://github.com/stars/dbudyak/lists/vr-mods) star list._
+_17 projects, mirrored from the [VR-mods](https://github.com/stars/dbudyak/lists/vr-mods) star list._
 
 - [CircuitLord/CircuitLordVRModInstaller](https://github.com/CircuitLord/CircuitLordVRModInstaller) — One-click installer for Big Walk VR and Titanfall 2 VR ⭐ 1.2k
-- [dariulone/cyberpunk-vr-port](https://github.com/dariulone/cyberpunk-vr-port) ⭐ 336
-- [emmericp/D2R-3D](https://github.com/emmericp/D2R-3D) — Play Diablo II: Resurrected in 3D. ⭐ 287
-- [Android-XR-Bridge/AXRB](https://github.com/Android-XR-Bridge/AXRB) — Compatibility layer to run Android OpenXR apps on Windows ⭐ 233
-- [bigmak94/AstroQuest](https://github.com/bigmak94/AstroQuest) — ASTRO BOT Rescue Mission (PS4, PlayStation VR) in virtual reality on Meta Quest 3: on the headset alone, or from a Windows PC through Virtual Desktop or SteamVR. A PS4 emulator (shadPS4) with the PlayStation VR it needs. Bring your own copy of the game. ⭐ 220
-- [tig3rmast3r/OFXR-Bridge](https://github.com/tig3rmast3r/OFXR-Bridge) — Frame generation for VR using Optical Flow ⭐ 196
-- [brandonmousseau/vhvr-mod](https://github.com/brandonmousseau/vhvr-mod) — Adds VR support to the PC game Valheim ⭐ 194
-- [CactusVRStudios/KHARVOX](https://github.com/CactusVRStudios/KHARVOX) — A DOOM (2016) VR conversion mod ⭐ 176
-- [jplakon/CallOfDuty4_VR](https://github.com/jplakon/CallOfDuty4_VR) — Call of Duty 4 VR! ⭐ 174
+- [dariulone/cyberpunk-vr-port](https://github.com/dariulone/cyberpunk-vr-port) ⭐ 338
+- [emmericp/D2R-3D](https://github.com/emmericp/D2R-3D) — Play Diablo II: Resurrected in 3D. ⭐ 294
+- [Android-XR-Bridge/AXRB](https://github.com/Android-XR-Bridge/AXRB) — Compatibility layer to run Android OpenXR apps on Windows ⭐ 248
+- [bigmak94/AstroQuest](https://github.com/bigmak94/AstroQuest) — ASTRO BOT Rescue Mission (PS4, PlayStation VR) in virtual reality on Meta Quest 3: on the headset alone, or from a Windows PC through Virtual Desktop or SteamVR. A PS4 emulator (shadPS4) with the PlayStation VR it needs. Bring your own copy of the game. ⭐ 227
+- [tig3rmast3r/OFXR-Bridge](https://github.com/tig3rmast3r/OFXR-Bridge) — Frame generation for VR using Optical Flow ⭐ 203
+- [brandonmousseau/vhvr-mod](https://github.com/brandonmousseau/vhvr-mod) — Adds VR support to the PC game Valheim ⭐ 195
+- [CactusVRStudios/KHARVOX](https://github.com/CactusVRStudios/KHARVOX) — A DOOM (2016) VR conversion mod ⭐ 177
+- [jplakon/CallOfDuty4_VR](https://github.com/jplakon/CallOfDuty4_VR) — Call of Duty 4 VR! ⭐ 175
 - [ClarkCheekyKent/CheekyFoveatedDLSS](https://github.com/ClarkCheekyKent/CheekyFoveatedDLSS) ⭐ 130
-- [IlyaMez/SpidyVR](https://github.com/IlyaMez/SpidyVR) ⭐ 82
-- [VR-Stereo-Hub/Dishonored-VR](https://github.com/VR-Stereo-Hub/Dishonored-VR) — Dishonored VR Port ⭐ 77
-- [DR-89/fear-vr](https://github.com/DR-89/fear-vr) — Open-source OpenXR VR mod for F.E.A.R. 1.08 - native stereo world rendering, headtracking and motion controls ⭐ 55
-- [Disonomouss/RDRVR](https://github.com/Disonomouss/RDRVR) — Red Dead Redemption VR Mod ⭐ 52
+- [IlyaMez/SpidyVR](https://github.com/IlyaMez/SpidyVR) ⭐ 94
+- [VR-Stereo-Hub/Dishonored-VR](https://github.com/VR-Stereo-Hub/Dishonored-VR) — Dishonored VR Port ⭐ 78
+- [Disonomouss/RDRVR](https://github.com/Disonomouss/RDRVR) — Red Dead Redemption VR Mod ⭐ 58
+- [DR-89/fear-vr](https://github.com/DR-89/fear-vr) — Open-source OpenXR VR mod for F.E.A.R. 1.08 - native stereo world rendering, headtracking and motion controls ⭐ 56
 - [NotGodlikeUwU/Silent-Hill-3-VR-Mod](https://github.com/NotGodlikeUwU/Silent-Hill-3-VR-Mod) — Fully working VR mode for Silent Hill 3 with Motion-Controls and 6-DOF ⭐ 12
-- [maranone/QuestSam](https://github.com/maranone/QuestSam) — Serious Sam Classic TFE & TSE VR Port for Meta Quest ⭐ 8
+- [maranone/QuestSam](https://github.com/maranone/QuestSam) — Serious Sam Classic TFE & TSE VR Port for Meta Quest ⭐ 9
+- [segadreamcat/blueprincevr](https://github.com/segadreamcat/blueprincevr) — Unofficial PC VR mod for Blue Prince, featuring motion controls, interactive hands, an in-VR journal, and offline voice notes. Requires the Windows PC game and SteamVR. ⭐ 3
 <!-- LIST:END -->
